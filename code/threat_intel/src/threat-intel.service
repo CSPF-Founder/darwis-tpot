@@ -1,0 +1,13 @@
+[Unit]
+Description=Threat Intel Service
+After=network.target remote-fs.target docker.service
+
+[Service]
+User=tpot
+Group=tpot
+WorkingDirectory=/app/dt/threat_intel/src/
+ExecStart=python3 service.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

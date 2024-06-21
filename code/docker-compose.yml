@@ -1,0 +1,28 @@
+services:
+  mariadb:
+    image: mariadb:10.11.3
+    container_name: mariadb
+    restart: always
+    environment:
+      MARIADB_ROOT_PASSWORD: "[ROOT_PASS_TO_REPLACE]"
+      MARIADB_USER: "dt_db"
+      MARIADB_PASSWORD: "[DB_PASSWORD_TO_REPLACE]"
+      MARIADB_DATABASE: "dt_db"
+    volumes:
+      - ./volumes/db/mariadb:/var/lib/mysql
+    # ports:
+    #   - "127.0.0.1:3306:3306"
+
+  frontend:
+    image: darwis-panel
+    restart: always
+    build:
+      context: /app/builddocker/
+    volumes:
+      - /app/builddocker/panel/:/app/dt/panel/
+      - /app/panel/certs/:/app/dt/certs/
+      - /app/dt/threat_intel/config/:/app/dt/threat_intel/config/
+    depends_on:
+      - mariadb
+    ports:
+      - 64443:443
