@@ -33,7 +33,7 @@ You can obtain a free Threat Intel license key from the CySecurity page.
 
 <img src="docimages/threat-intel/activation code.png" alt="drawing" width="500"/>
 
-> **Note: Each email address will receive one license key. Please store and keep your license key safely, as it cannot be recovered if lost. Once a license key has been used, it cannot be reused.**
+> **Note: Each email address will receive one license key. Please store and keep your license key safely, as it cannot be recovered if lost. Once a license key has been used, it cannot be reused. If you are using both dianeoa and darwis tpot. You need to use a different email id to request the key**
 
 ### Accessing the Panel
 
