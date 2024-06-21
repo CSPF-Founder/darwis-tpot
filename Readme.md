@@ -4,7 +4,7 @@
 
 This is an enhanced version of TPOT with the following features:
 
-- No click install of TPOT
+- Single click install of TPOT
 
 - Removal of Wordpot and other web honeypots that lead to XSS, reducing risk to all domains and webapps when hosted on an organization's subdomain.
 
