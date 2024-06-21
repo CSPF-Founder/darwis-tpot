@@ -26,7 +26,7 @@ This is an enhanced version of TPOT with the following features:
 Download this repository via
 
 ```
-bash git clone https://github.com/CSPF-Founder/dionaea-tpot.git
+bash git clone https://github.com/CSPF-Founder/darwis-tpot.git
 ```
 Or to download it as a zip file, click on `Code` in the top right corner and then select `Download ZIP`.
 
