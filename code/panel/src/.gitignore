@@ -13,6 +13,6 @@ app/[Cc]onfig/database.php
 /.idea/
 /.git/
 /.vscode/
-/vendor/
+#/vendor/
 .php-cs-fixer.cache
 /composer.phar
