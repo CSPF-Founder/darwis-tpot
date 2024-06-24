@@ -1,8 +1,9 @@
 #!/bin/bash
 #Download tpot
-wget https://github.com/telekom-security/tpotce/archive/refs/tags/24.04.0.zip 
-unzip 24.04.0.zip
-mv tpotce-24.04.0 tpotce
+wget https://codeload.github.com/telekom-security/tpotce/zip/8f3966a675c8ebafad97d72ecae261175bd92aba -O tpot.zip
+unzip tpot.zip
+mv tpotce-8f3966a675c8ebafad97d72ecae261175bd92aba tpotce
+#git clone https://github.com/telekom-security/tpotce.git
 chmod -R 777 tpotce
 cp /vagrant/vagrant/expect.exp /home/vagrant/tpotce/expect.exp
 

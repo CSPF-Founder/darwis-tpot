@@ -1,6 +1,4 @@
 # T-Pot: STANDARD
-version: '3.9'
-
 networks:
   adbhoney_local:
   ciscoasa_local:
@@ -641,6 +639,7 @@ services:
      - TPOT_TYPE=${TPOT_TYPE:-HIVE}
      - TPOT_HIVE_USER=${TPOT_HIVE_USER}
      - TPOT_HIVE_IP=${TPOT_HIVE_IP}
+     - LS_SSL_VERIFICATION=${LS_SSL_VERIFICATION:-full}
     ports:
      - "127.0.0.1:64305:64305"
     image: ${TPOT_REPO}/logstash:${TPOT_VERSION}
