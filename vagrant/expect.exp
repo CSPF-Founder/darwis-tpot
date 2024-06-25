@@ -47,7 +47,7 @@ spawn ./install.sh
 match_max 100000
 expect "### Install? (y/n) "
 send -- "y\r"
-expect  "### Install Type? (h/s) "
+expect  "### Choose your T-Pot type"
 send -- "h\r"
 expect  "### Enter your web user name: "
 send -- "kibana\r"
